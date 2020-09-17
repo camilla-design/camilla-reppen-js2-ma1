@@ -17,31 +17,13 @@ p {
         margin: 20px auto;
 }
 
-.product {
+.products {
     margin: 8px;
     padding: 8px;
     max-width: 300px;
     border: 1px solid gray;
     border-radius: 1rem;
 }
-
-.message {
-    border: 1px solid grey;
-    color: grey;
-    margin-top: 1rem;
-    padding: 1rem;
-}
-
-.message.error {
-    border-color: darkred;
-    color: darkred;
-}
-
-.message.success {
-    border-color: darkgreen;
-    color: darkgreen;
-}
-
 
 .loading {
     border: 16px solid #f3f3f3;
