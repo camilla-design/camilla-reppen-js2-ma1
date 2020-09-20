@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ma1</title>
         <link href="css/style.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/ee54249b54.js" crossorigin="anonymous"></script>
         <link rel="icon" href="data:;base64,=" />
     </head>
     <body>
@@ -12,15 +13,13 @@
             <h1>Search price</h1>
 
             <div class="search">
-                <input placeholder="Search price..." id="prices" data-field="prices" />
-                <p id="error" class="error-message" style="display: none">Sorry, Not found</p>
+                <input placeholder="Search price..." id="prices" data-field="price" />
+                <div class="product-container">
+                    <div class="loading"></div>
+                    <div class="fav"></div>
+                </div>
             </div>
 
-            <div class="container">
-            <div class="product-container">
-                <div class="loading"></div>
-            </div>
-        </div>
     </div>
         <script src="js/script.js" type="module"></script>
     </body>

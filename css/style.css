@@ -9,7 +9,8 @@ h4 {
     border-bottom: 1px solid darkgreen;
     width: 210px;
 }
-p {
+p,
+.message {
     color: green;
 }
 .container {

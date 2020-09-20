@@ -1,7 +1,7 @@
-import { renderProducts } from "./ui/renderProducts.js";
+import { url } from "./constants/settings.js";
+import { createProducts } from "./ui/createProducts.js";
+import { displayMessage } from "./ui/displayMessage.js";
 import { searchPrice } from "./ui/searchPrice.js";
-
-const url = "https://t9jt3myad3.execute-api.eu-west-2.amazonaws.com/api/products";
 
 async function getProduct() {
     try { 
@@ -11,11 +11,12 @@ async function getProduct() {
         
         const products = json.data;
 
-        renderProducts(products);
+        createProducts(products);
         searchPrice (products);
 
     } catch (error) {
         console.log(error);
+        displayMessage("error", error);
     }
 }
 

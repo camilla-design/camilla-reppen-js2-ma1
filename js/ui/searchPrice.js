@@ -1,4 +1,6 @@
-import { renderProducts } from "./renderProducts.js";
+
+import { createProducts } from "./createProducts.js";
+
 
 export function searchPrice(products) {
     const priceSearch = document.querySelector(".search");
@@ -10,10 +12,10 @@ export function searchPrice(products) {
            if(product.price <= searchValue) {
                return true;
            }
-           
         }
+
         );
 
-        renderProducts(filterPrice);
+        createProducts(filterPrice);
     };
 }
